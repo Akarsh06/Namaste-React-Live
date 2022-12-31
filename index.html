@@ -10,32 +10,5 @@
     <div id="root"></div>
     
 </body>
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script>
-        // Creating a div using plain/vanilla JS
-        /* const root = document.getElementById("root");
-           const heading = document.createElement('h1');
-           heading.innerHTML = 'Hi Akarsh';
-           root.appendChild(heading); */
-        
-        // const heading = React.createElement('h1', {}, 'Hi Akarsh');
-        // const root = ReactDOM.createRoot(document.getElementById('root'));
-        // root.render(heading);
-
-        const heading1 = React.createElement('h1', {
-            id: 'h1',
-            class: 'heading-one',
-            style: {color: 'red',fontSize: '80px'}
-        }, 'heading1');
-        const heading2 = React.createElement('h2', {}, 'heading2');
-
-        const container = React.createElement('container', {}, [heading1, heading2]);
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-
-        root.render(container);
-
-
-</script>
-
+<script type="module" src="App.js"></script>
 </html>
